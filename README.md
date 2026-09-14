@@ -1,42 +1,39 @@
-# Adult Income Gender Clustering
+# Adult Income: Gender-Stratified Clustering
 
-This project explores the latent socio-economic structure of the Adult Income dataset using a gender-stratified unsupervised learning approach.
+Exploring socio-economic patterns through unsupervised learning and interpretable visualisation.
 
-The analysis compares **K-Means** and **Gaussian Mixture Models (GMM)** on the male and female subsets of the dataset, with the aim of identifying interpretable socio-economic profiles beyond direct income prediction.
+## Overview
 
-## Project Aim
+This analysis compares K-Means and Gaussian Mixture Models (GMM) on male and female subsets of the Adult Income dataset. It asks whether clustering can reveal meaningful socio-economic profiles beyond direct income prediction.
 
-The project investigates:
+The project demonstrates exploratory data analysis, model comparison and communication of findings—skills relevant to analytics and evidence-based business research.
 
-- whether distinct socio-economic clusters exist in the Adult Income dataset
-- whether **GMM** provides more informative clustering solutions than **K-Means**
-- whether the latent socio-economic structure differs across **male** and **female** subsets
+## Research questions
+
+- What socio-economic profiles emerge within each subset?
+- How do K-Means and GMM differ in interpretability?
+- How does income concentration vary across the resulting clusters when income is excluded from model training?
 
 ## Methods
 
-The main methods used in this project are:
+- K-Means and Gaussian Mixture Models for clustering.
+- Silhouette score as a supplementary clustering diagnostic.
+- PCA for two-dimensional visualisation.
+- Three-dimensional visualisation using interpretable variables.
 
-- **K-Means clustering**
-- **Gaussian Mixture Models (GMM)**
-- **Silhouette score** as a supplementary clustering check
-- **PCA** for 2-D visualisation
-- **3-D cluster visualisation** using selected interpretable variables
+## Findings reported in the analysis
 
-## Main Findings
+The analysis identifies interpretable socio-economic clusters and reports that the selected GMM solutions are more informative than the K-Means alternatives. It also reports differences between the two subsets, including differences in high-income concentration when income is excluded during training.
 
-The results suggest that:
+These findings describe patterns in this dataset. They do not establish causal explanations or justify conclusions about individuals.
 
-- the dataset contains **interpretable socio-economic clusters** rather than random groupings
-- **GMM** provides more informative and interpretable solutions than K-Means for this dataset
-- the **male** and **female** subsets do not share the same latent socio-economic structure
-- even when `income` is excluded during training, the selected GMM solutions still reveal a clear gender difference in high-income concentration
+## Explore the work
 
-Overall, the project shows that unsupervised clustering can be used to explore hidden socio-economic stratification in demographic data.
+- **Analysis report:** `adult_income_gender_clustering_report.pdf`
+- **Code document:** `adult_income_gender_clustering_code.pdf`
 
-## Repository Structure
+The repository documents the analysis in PDF form; the code document is not an executable notebook. Consult the report for the experimental context and supporting results.
 
-```text
-adult-income-gender-clustering/
-├── adult_income_gender_clustering_report.pdf
-├── adult_income_gender_clustering_code.pdf
-└── README.md
+## Interpretation and limitations
+
+Cluster assignments depend on preprocessing, feature selection and model settings. The male/female comparison follows the categories used in this analysis and does not represent the full range of gender identities. Interpret the results within the dataset's historical and sampling context.
