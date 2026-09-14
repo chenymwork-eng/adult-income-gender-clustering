@@ -29,10 +29,9 @@ These findings describe patterns in this dataset. They do not establish causal e
 
 ## Explore the work
 
-- **Analysis report:** `adult_income_gender_clustering_report.pdf`
-- **Code document:** `adult_income_gender_clustering_code.pdf`
+- [View the analysis notebook (PDF)](adult_income_gender_clustering_notebook.pdf)
 
-The repository documents the analysis in PDF form; the code document is not an executable notebook. Consult the report for the experimental context and supporting results.
+The available notebook is a PDF document, not an executable notebook.
 
 ## Interpretation and limitations
 
